@@ -1,0 +1,289 @@
+/*--------------- GENERALIDADES ----------------*/
+
+* {
+    font-family: "Roboto";
+}
+
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url(../fonts/RobotoCondensed-Bold.ttf);
+}
+
+.resaltado {
+    font-weight: bold;
+}
+
+
+.headerContenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.logoPaterson {
+    width: 300px;
+    height: 200px;
+}
+
+.formularioTamano {
+    width: 50%;
+}
+
+h1 {
+    font-family: "RobotoBold";
+    color: rgb(151, 189, 151);
+}
+
+a {
+    color: rgb(105, 132, 105);
+    text-decoration: none;
+}
+
+h2 {
+    color: rgb(105, 132, 105);
+    font-family: "RobotoBold";
+}
+
+h3 {
+    color: rgb(105, 132, 105);
+    font-family: "RobotoBold";
+}
+
+/*------------------- NAV BAR -----------------*/
+
+nav {
+    background-color: rgb(185, 231, 185);
+}
+
+/*------------------  INDEX ---------------- */
+
+.tamanoIframe {
+    height: 315px;
+}
+
+.tamanoFotos {
+    width: 280px;
+    height: 400px;
+}
+
+.textoMedio {
+    text-align: center;
+}
+
+.paddingTexto {
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.cardPadding {
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+.cardSize {
+    width: 50px;
+    height: 70px;
+}
+
+
+.cardColor {
+    background-color: rgb(128, 157, 128);
+}
+
+.cardColorDos {
+    background-color: rgb(170, 215, 170);
+}
+
+.destacadosCentro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.carouselContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    border: 3px solid rgb(105, 132, 105);
+}
+
+.carouselSize {
+    margin: auto;
+}
+
+.paddingIframe {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.showroomTexto {
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.paddingDestacado {
+    padding-bottom: 2%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgb(170, 215, 170);
+    width: 5%;
+}
+
+/* ------------------- FAQ ------------------ */
+
+.tamanoAndreani {
+    width: 250px;
+    height: 100px;
+}
+
+.tamanoCorreoArg {
+    width: 280px;
+    height: 100px;
+}
+
+.tamanoGarantia {
+    width: 550px;
+    height: 400px;
+}
+
+.textoCentro {
+    text-align: center;
+}
+
+/*----------------------- PRODUCTOS ------------------*/
+
+.colorBotton {
+    background-color: rgb(151, 189, 151);
+    color: black
+}
+
+.dropdown {
+    display: flex;
+    justify-content: end;
+}
+
+
+.productosCentrados {
+    display: flex;
+    justify-content: center;
+}
+
+.borde {
+    border: 3px solid rgb(105, 132, 105);
+    border-radius: 10px;
+}
+
+.tamanoGiftCard {
+    width: 355px;
+    height: 355px;
+}
+
+
+section a.arriba {
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(151, 189, 151);
+    color: black
+}
+
+.buttonCentrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+/*----------------------- CONTACTO ------------------*/
+
+.buttonSend {
+    margin: 1%;
+    padding-top: 1%;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.margenContacto {
+    margin-bottom: 1%;
+}
+
+/*----------------------- SOBRE NOSOTROS ------------------*/
+
+.nosotrosTexto {
+    display: flex;
+    justify-content: center;
+}
+
+.carrousel {
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    height: 700px;
+    padding-bottom: 4%;
+}
+
+.tamanoInstagram {
+    width: 50px;
+    height: 50px;
+}
+
+.largosFoto {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.bordeLargos {
+    border: 3px solid rgb(105, 132, 105);
+    border-radius: 10px;
+}
+
+.flechaButton {
+
+    border: 3px solid rgb(105, 132, 105);
+    border-radius: 10px;
+}
+
+.containerCalesita {
+    margin-bottom: 4%;
+}
+
+
+/*----------------------- LOGO WHATSAPP ------------------*/
+
+.tamanoWhatsapp {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 25px;
+}
+
+/*----------------------- FOOTER ------------------*/
+footer {
+    background-color: rgb(185, 231, 185);
+    width: 100%;
+    height: 20px;
+    font-size: small;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.copyRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

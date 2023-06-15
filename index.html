@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paterson Joyería</title>
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="icon" type="image/x-icon" href="./images/paterson-o-removebg-preview.png">
+</head>
+
+
+<body>
+  <!--BOOTSTRAP JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <!--BARRA DE NAVEGACIÓN-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand bold resaltado" href="#">Paterson Joyería</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active resaltado" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/sobre-nosotros.html">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/faq.html">Preguntas Frecuentes</a>
+          </li>
+        </ul>
+
+      </div>
+      <form class="d-flex" role="search">
+        <input class="container form-control me-2" type="Search" placeholder="Buscar" aria-label="Buscar">
+        <button class="container btn btn-outline-success resaltado" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+
+  <!--IMAGEN DE CABECERA-->
+  <header class="backgroundHeader container-fluid">
+    <figure class="headerContenedor">
+      <img class="logoPaterson" src="./images/logo-paterson.jpg" alt="Logo de Paterson">
+    </figure>
+  </header>
+
+  <!--DESTACADOS DEL MES -->
+  <div class="container">
+    <h1 class="underline textoMedio container-fluid paddingDestacado">PRODUCTOS DESTACADOS DEL MES</h1>
+    <div class="row">
+      <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+        <figure>
+          <img class="tamanoFotos rounded borde img-fluid" src="./images/destacados 1 (2).JPG"
+            alt="Cadena Bolitas y Colibrí">
+          <p class="textoMedio">Cadena con Bolitas de 3mm y Colibrí</p>
+        </figure>
+      </div>
+      <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+        <figure>
+          <img class="tamanoFotos rounded borde img-fluid" src="./images/destacados 1 (1).JPG"
+            alt="Anillo Todo Pasa Bañado en Oro">
+          <p class="textoMedio">Anillo Todo Pasa Bañado en Oro</p>
+        </figure>
+      </div>
+      <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+        <figure>
+          <img class="tamanoFotos rounded borde img-fluid" src="./images/destacados 1 (3).JPG" alt="Cadena Infinito">
+          <p class="textoMedio">Cadena con Dije Infinito</p>
+        </figure>
+      </div>
+      <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+        <figure>
+          <img class="tamanoFotos rounded borde img-fluid" src="./images/destacados 1 (4).JPG" alt="Pulsera Bolitas">
+          <p class="textoMedio">Pulsera con Bolitas de 3mm</p>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!----CARRUSEL---->
+  <div class="container-fluid">
+    <section id="carouselExampleIndicators" class="carousel slide carouselContainer carouselSize">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/paint (1).png" class="d-block w-100" alt="Showroom">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/paint.png" class="d-block w-100" alt="Cadenas y Pulseras">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/paint (2).png" class="d-block w-100" alt="Showroom">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/paint (3).png" class="d-block w-100" alt="Plata 925 Joyas">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+  </div>
+
+   <!------ CARDS ------->
+
+   <section class="container cardMargin cardPadding">
+    <div class="cardPadding row">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="card cardPadding" style="width: 90%;">
+            <div class="card-img-top d-flex justify-content-center cardColor">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-credit-card cardSize"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+                <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+              </svg>
+            </div>
+            <div class="card-body cardColorDos ">
+              <p class="card-text resaltado textoMedio">PAGÁ COMO QUIERAS!</p>
+              <p class="card-text textoMedio">Hace tu compra con tarjeta de crédito, débito o efectivo</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="card cardPadding" style="width: 90%;">
+            <div class="card-img-top d-flex justify-content-center cardColor">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-truck cardSize" viewBox="0 0 16 16">
+                <path
+                  d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+              </svg>
+            </div>
+            <div class="card-body cardColorDos">
+              <p class="card-text resaltado textoMedio">ENVÍOS A TODO EL PAÍS</p>
+              <p class="card-text textoMedio">Nos aseguramos de que tus envíos te lleguen a domicilio</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="card cardPadding" style="width: 90%;">
+            <div class="card-img-top d-flex justify-content-center cardColor">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-lock cardSize" viewBox="0 0 16 16">
+                <path
+                  d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+              </svg>
+            </div>
+            <div class="card-body cardColorDos">
+              <p class="card-text resaltado textoMedio">COMPRÁ CON SEGURIDAD</p>
+              <p class="card-text textoMedio">Tus datos personales van a estar siempre protegidos</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="card cardPadding" style="width: 90%;">
+            <div class="card-img-top d-flex justify-content-center cardColor">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-wallet2 cardSize" viewBox="0 0 16 16">
+                <path
+                  d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z" />
+              </svg>
+            </div>
+            <div class="card-body cardColorDos">
+              <p class="card-text resaltado textoMedio">COMPRAS MAYORISTAS</p>
+              <p class="card-text textoMedio">Para vender Paterson pedinos el catálogo!</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+
+  <!---IFRAMES/MAIN--->
+  <main>
+    <section class=" container paddingIframe">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+          <section>
+            <h1 class="textoMedio underline">VENITE AL SHOWROOM!</h1>
+            <article>
+              <iframe class="container-fluid tamanoIframe"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52543.555502184354!2d-58.406969999999994!3d-34.604864!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbb45dc5cdf7%3A0xc1fca8c9667ad879!2sPaterson%20Joyeria!5e0!3m2!1ses-419!2sar!4v1686661658401!5m2!1ses-419!2sar"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+          </section>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 showroomTexto">
+          <section class="container paddingTexto">
+            <p class="resaltado">
+              Nuestro horario de atención es de lunes a viernes (excepto feriados) entre las 10am y las
+              5:30pm.</p>
+            <p class="resaltado">Podes pasar a mirar nuestras piezas, probártelas, consultarnos sobre la pieza
+              personalizada de tus sueños, hacer arreglos (sean nuestras joyas o no), pulir tus piezas, etc.!
+            </p>
+            <p class="resaltado">Haremos todo lo posible para que tengas la mejor experiencia.
+            </p>
+            <p class="resaltado"> Estamos en Boulogne Sur Mer 472 1°A (CABA)</p>
+            <p class="resaltado"> ¡Te esperamos!</p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!--FOOTER/PIE DE PÁGINA-->
+  <footer>
+    <p class="copyRight"> © COPYRIGHT PATERSON. Todos los derechos reservados.</p>
+    <figure>
+      <img class="tamanoWhatsapp" src="./images/logo-wsp" alt="Logo Whatsapp">
+    </figure>
+  </footer>
+
+</body>
+
+</html>

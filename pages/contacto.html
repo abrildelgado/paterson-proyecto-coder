@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../images/paterson-o-removebg-preview.png">
+
+</head>
+
+<body>
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <!--BARRA DE NAVEGACIÓN-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand resaltado" href="#">Paterson Joyería</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active resaltado" aria-current="page" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobre-nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./faq.html">Preguntas Frecuentes</a>
+                    </li>
+                </ul>
+
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="Search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success resaltado" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+
+    <!--IMAGEN DE CABECERA-->
+    <header>
+        <figure class="headerContenedor">
+            <img class="logoPaterson" src="../images/logo-paterson.jpg" alt="Logo de Paterson">
+        </figure>
+    </header>
+
+
+<main>
+
+    <!-- FORMULARIOS -->
+    <section class="container text-left">
+        <div class="row align-items-start">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxxl-6">
+                <form class="container-fluid">
+                    <h1>Contacta al equipo:</h1>
+                    <p><span class="underline resaltado">Nombre</span>: Abril Delgado</p>
+                    <p><span class="underline resaltado">Tel.</span>: +54 156 972 2458</p>
+                    <p class="resaltado">O también comunicarse con:</p>
+                    <p><span class="underline resaltado">Nombre</span>: Julián Merensztein</p>
+                    <p><span class="underline resaltado">Tel.</span>: +54 156 916 2458</p>
+                    <p><span class="underline resaltado">Mail</span>: paterson.joyeria@gmail.com</p>
+                </form>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxxl-6">
+                <section>
+                    <h1>Dejanos un mensaje:</h1>
+                    <div class="container-fluid">
+                        <label for="exampleFormControlInput1" class="form-label formularioTamano resaltado margenContacto">Nombre:</label>
+                        <input type="text" class="form-control margenContacto" id="exampleFormControlInput1"
+                            placeholder="Nombre Ejemplo">
+                    </div>
+
+                    <div class="container-fluid">
+                        <label for="exampleFormControlInput1" class="form-label formularioTamano resaltado margenContacto">Email:</label>
+                        <input type="email" class="form-control margenContacto" id="exampleFormControlInput1"
+                            placeholder="mail@ejemplo.com">
+                    </div>
+
+                    <div class="container-fluid">
+                        <label for="exampleFormControlTextarea1" class="form-label FormularioTamano resaltado margenContacto"> Mensaje:</label>
+                        <textarea class="form-control margenContacto" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-outline-success buttonSend resaltado margenContacto">Enviar</button>
+                </section>
+            </div>
+        </div>
+    </section>
+
+
+    <!--FOOTER/PIE DE PÁGINA-->
+    <footer>
+        <p class="copyRight">© COPYRIGHT PATERSON. Todos los derechos reservados.</p>
+        <figure>
+            <img class="tamanoWhatsapp" src="../images/logo-wsp" alt="Logo Whatsapp">
+        </figure>
+    </footer>
+
+
+</main>
+
+</body>
+
+</html>
