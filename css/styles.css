@@ -34,6 +34,7 @@
     width: 50%;
 }
 
+
 h1 {
     font-family: "RobotoBold";
     color: rgb(151, 189, 151);
@@ -54,14 +55,9 @@ h3 {
     font-family: "RobotoBold";
 }
 
-.navbar-nav {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .searchBar {
-    margin-left: auto;
-  }
+.textoMedio {
+    text-align: center;
+}
 
 /*------------------- NAV BAR -----------------*/
 
@@ -69,44 +65,16 @@ nav {
     background-color: rgb(185, 231, 185);
 }
 
+.searchBar {
+    margin-left: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
 /*------------------  INDEX ---------------- */
-
-.tamanoIframe {
-    height: 315px;
-}
-
-.tamanoFotosIndex {
-    width: auto;
-}
-
-
-.textoMedio {
-    text-align: center;
-}
-
-.paddingTexto {
-    padding-top: 8%;
-    padding-bottom: 1%;
-}
-
-.cardPadding {
-    margin-top: 1%;
-    margin-bottom: 3%;
-}
-
-.cardSize {
-    width: 30%;
-    height: 40%;
-}
-
-
-.cardColor {
-    background-color: rgb(128, 157, 128);
-}
-
-.cardColorDos {
-    background-color: rgb(170, 215, 170);
-}
 
 .destacadosCentro {
     display: flex;
@@ -114,16 +82,51 @@ nav {
     justify-content: space-around;
 }
 
+
+.paddingDestacado {
+    padding-bottom: 2%;
+}
+
+/*---- CAROUSSEL ----*/
+
 .carouselContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 95%;
     border: 3px solid rgb(105, 132, 105);
 }
 
 .carouselSize {
-    width: auto;
+    width: 95%;
+}
+
+@media (min-width: 1400px) {
+    .tamanoCarousel {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .tamanoCarousel {
+        max-width: 60%;
+    }
+}
+
+.tamanoCarousel {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgb(170, 215, 170);
+    width: 5%;
+}
+
+
+/*---- IFRAME ---- */
+.tamanoIframe {
+    height: 315px;
 }
 
 .paddingIframe {
@@ -135,17 +138,46 @@ nav {
     text-align: center;
     display: flex;
     align-items: center;
-
+    font-size: large;
+}
+.tamanoFotosIndex {
+    width: auto;
 }
 
-.paddingDestacado {
-    padding-bottom: 2%;
+
+.paddingTexto {
+    margin-top: 5%;
+    margin-bottom: 1%;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+
+/*---- CARDS ----*/
+
+.cardPadding {
+    margin-bottom: 3%;
+}
+
+.cardSize {
+    width: 30%;
+    height: 40%;
+}
+
+.cardFlex {
+    display: flex;
+    justify-content: center;
+}
+
+.cardBetween {
+    display: flex;
+    justify-content: center;
+}
+
+.cardColor {
+    background-color: rgb(128, 157, 128);
+}
+
+.cardColorDos {
     background-color: rgb(170, 215, 170);
-    width: 5%;
 }
 
 /* ------------------- FAQ ------------------ */
@@ -339,10 +371,9 @@ section a.arriba {
 footer {
     background-color: rgb(185, 231, 185);
     width: 100%;
-    height: 20px;
+    height: 2%;
     font-size: small;
     color: rgb(0, 0, 0);
-    position: relative;
     margin-top: 2%;
 }
 
