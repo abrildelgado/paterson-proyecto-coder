@@ -1,0 +1,14 @@
+{
+  "name": "segunda-prentrega",
+  "version": "1.0.0",
+  "description": "paterson joyeria sitio web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "sass --watch ./style/scss/main.scss ./style/css/style.css"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

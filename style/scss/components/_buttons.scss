@@ -1,0 +1,32 @@
+
+//Botón para Ir a Arriba en Productos
+
+.botonScss {
+
+    .buttonCentrado {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+    .arriba {
+        display: inline-block;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        padding: 5px;
+        background-color: rgb(151, 189, 151);
+        color: black
+    }
+}
+
+//Boton de Contacto
+
+.mainContacto {
+
+    .buttonSend {
+        margin: 1%;
+        padding-top: 1%;
+        margin-bottom: 1%;
+    }
+}

@@ -1,0 +1,18 @@
+@import './abstracts/variables';
+
+@import './base/reset';
+@import './base/typography';
+
+@import './layouts/navbar';
+@import './layouts/footer';
+
+@import './components/buttons';
+@import './components/caroussel';
+@import './components/dropdown';
+
+@import './pages/home';
+@import './pages/contact';
+@import './pages/about-us';
+@import './pages/faq';
+@import './pages/productos';
+

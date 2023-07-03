@@ -1,0 +1,121 @@
+//INDEX-------------------------------------------------------------------------------
+
+//Destacados del Mes
+
+.sectionDestacados {
+
+    .destacadosCentro {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+    .paddingDestacado {
+        padding-bottom: 2%;
+    }
+
+    figure {
+        .borde {
+            border: 3px solid $colorPrincipal;
+            border-radius: 10px;
+        }
+
+        .tamanoFotosIndex {
+            width: auto;
+        }
+
+    }
+
+}
+
+//Iframe 
+
+.paddingIframes {
+
+    .paddingIframe {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .sectionIframes {
+
+        .tamanoIframe {
+            height: 315px;
+        }
+
+        .showroomTexto {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            font-size: large;
+
+        }
+
+        .paddingTexto {
+            margin-top: 5%;
+            margin-bottom: 1%;
+        }
+    }
+}
+
+//Cards
+
+.sectionCards {
+
+    .cardPadding {
+        margin-bottom: 2%;
+    }
+
+    @media (max-width: 470px) {
+        .cardsJustify {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .cardPadding {
+        margin-bottom: 2%;
+    }
+
+    @media (max-width: 100vh) {
+        .tamanoCard {
+            max-height: 100%;
+        }
+    }
+
+    @media (max-width: 470px) {
+        .tamanoCard {
+            min-width: 70%;
+        }
+    }
+
+    .cardBetween {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .cardPadding {
+        margin-bottom: 2%;
+    }
+
+    .cardColor {
+        background-color: $colorPrincipal;
+    }
+
+    .cardFlex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cardSize {
+        width: 30%;
+        height: 40%;
+    }
+
+    .cardColorDos {
+        background-color: rgb(170, 215, 170);
+    }
+
+}

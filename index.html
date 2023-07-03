@@ -8,7 +8,12 @@
   <!--Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/styles.css">
+  <!--CSS-->
+  <link rel="stylesheet" href="./style/css/style.css">
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="./images/paterson-o-removebg-preview.png">
 </head>
 
@@ -55,14 +60,14 @@
   </header>
 
   <!--DESTACADOS DEL MES -->
-  <div class="container">
-    <h1 class="underline textoMedio container-fluid paddingDestacado">PRODUCTOS DESTACADOS DEL MES</h1>
+  <section class="sectionDestacados container">
+    <h1 class="underline resaltado textoMedio container-fluid paddingDestacado">PRODUCTOS DESTACADOS DEL MES</h1>
     <div class="row">
       <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
         <figure>
           <img class="tamanoFotosIndex rounded borde img-fluid" src="./images/destacados 1 (2).JPG"
             alt="Cadena Bolitas y Colibrí">
-          <p class="textoMedio">Cadena con Bolitas de 3mm y Colibrí</p>
+          <p class="textoMedio">Cadena con Bolitas y Dije Colibrí</p>
         </figure>
       </div>
       <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
@@ -74,22 +79,24 @@
       </div>
       <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
         <figure>
-          <img class="tamanoFotosIndex rounded borde img-fluid" src="./images/destacados 1 (3).JPG" alt="Cadena Infinito">
+          <img class="tamanoFotosIndex rounded borde img-fluid" src="./images/destacados 1 (3).JPG"
+            alt="Cadena Infinito">
           <p class="textoMedio">Cadena con Dije Infinito</p>
         </figure>
       </div>
       <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
         <figure>
-          <img class="tamanoFotosIndex rounded borde img-fluid" src="./images/destacados 1 (4).JPG" alt="Pulsera Bolitas">
+          <img class="tamanoFotosIndex rounded borde img-fluid" src="./images/destacados 1 (4).JPG"
+            alt="Pulsera Bolitas">
           <p class="textoMedio">Pulsera con Bolitas de 3mm</p>
         </figure>
       </div>
     </div>
-  </div>
+  </section>
 
   <!----CARRUSEL---->
-  <div class="tamanoCarousel container-fluid">
-    <section id="carouselExampleIndicators" class="carousel slide carouselContainer carouselSize">
+  <section class="sectionCarrusel tamanoCarousel container-fluid">
+    <article id="carouselExampleIndicators" class="carousel slide carouselContainer carouselSize">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -114,26 +121,28 @@
           <img src="./images/paint (3).png" class="d-block w-100" alt="Plata 925 Joyas">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </section>
-  </div>
+      <div class="botonesClase">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </article>
+  </section>
 
   <!---IFRAMES/MAIN--->
-  <main>
-    <section class="container paddingIframe">
+  <main class="paddingIframes">
+    <section class="sectionIframes container paddingIframe">
       <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
           <section>
-            <h1 class="textoMedio underline">VENITE AL SHOWROOM!</h1>
+            <h1 class="textoMedio resaltado underline">VENITE AL SHOWROOM!</h1>
             <article>
               <iframe class="container-fluid tamanoIframe"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52543.555502184354!2d-58.406969999999994!3d-34.604864!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbb45dc5cdf7%3A0xc1fca8c9667ad879!2sPaterson%20Joyeria!5e0!3m2!1ses-419!2sar!4v1686661658401!5m2!1ses-419!2sar"
@@ -159,10 +168,10 @@
     </section>
   </main>
 
-   <!------ CARDS ------->
+  <!------ CARDS ------->
 
-   <section class="container cardMargin cardPadding">
-    <div class="cardPadding row cardsJustify">
+  <section class="sectionCards container cardPadding">
+    <article class="cardPadding row cardsJustify">
       <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 tamanoCard">
         <div class="card cardPadding flex-column cardBetween">
           <div class="card-img-top cardFlex justify-content-center cardColor">
@@ -213,10 +222,10 @@
         <div class="card cardPadding flex-column cardBetween">
           <div class="card-img-top cardFlex justify-content-center cardColor">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-            class="bi bi-wallet2 cardSize" viewBox="0 0 16 16">
-            <path
-              d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z" />
-          </svg>
+              class="bi bi-wallet2 cardSize" viewBox="0 0 16 16">
+              <path
+                d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z" />
+            </svg>
           </div>
           <div class="card-body cardColorDos">
             <p class="card-text resaltado textoMedio">COMPRAS MAYORISTAS</p>
@@ -224,7 +233,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </article>
   </section>
 
 

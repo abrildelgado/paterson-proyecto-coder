@@ -1,0 +1,30 @@
+// HEADER + NAVBAR
+
+header {
+
+    nav {
+        background-color: $colorSecundario;
+    }
+
+    .searchBar {
+        margin-left: auto;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .headerContenedor {
+        display: flex;
+        justify-content: center;
+    }
+
+    figure {
+
+        .logoPaterson {
+            width: 300px;
+            height: 200px;
+        }
+    }
+}

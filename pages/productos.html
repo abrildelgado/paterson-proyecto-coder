@@ -7,7 +7,11 @@
     <title>Productos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../style/css/style.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../images/paterson-o-removebg-preview.png">
 
 </head>
@@ -16,7 +20,7 @@
     <!----NAVBAR + HEADER ---->
 
     <!----IMAGEN DE CABECERA---->
-    <header>
+    <header id="ARRIBAS">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand resaltado" href="#">Paterson Joyería</a>
@@ -48,16 +52,17 @@
                     </form>
                 </div>
             </div>
-        </nav>    
+        </nav>
         <figure class="headerContenedor">
             <img class="logoPaterson" src="../images/logo-paterson.jpg" alt="Logo de Paterson">
         </figure>
     </header>
 
-        <!----BOTON DE PRODUCTOS---->
+    <!----BOTON DE PRODUCTOS---->
+    <section class="botonProductos">
         <div class="dropdown container-fluid">
-            <button class="btn btn-secondary dropdown-toggle colorBotton resaltado" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle colorBotton resaltado" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 Productos: </button>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Anillos</a></li>
@@ -68,375 +73,383 @@
                 <li><a class="dropdown-item" href="#">Conjuntos</a></li>
                 <li><a class="dropdown-item" href="#">Packs Mayoristas</a></li>
                 <li><a class="dropdown-item" href="#">Aros</a></li>
-    
+
             </ul>
         </div>
+    </section>
 
     <!----BOTON DE LARGOS---->
-    <div class="dropdown container-fluid">
-        <button class="btn btn-secondary dropdown-toggle colorBotton resaltado" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Filtrar por largo: </button>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">18cm</a></li>
-            <li><a class="dropdown-item" href="#">21cm</a></li>
-            <li><a class="dropdown-item" href="#">40cm</a></li>
-            <li><a class="dropdown-item" href="#">45cm</a></li>
-            <li><a class="dropdown-item" href="#">50cm</a></li>
-            <li><a class="dropdown-item" href="#">60cm</a></li>
-            <li><a class="dropdown-item" href="#">Todos</a></li>
+    <section class="botonProductos">
+        <div class="dropdown container-fluid">
+            <button class="btn btn-secondary dropdown-toggle colorBotton resaltado" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Filtrar por largo: </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">18cm</a></li>
+                <li><a class="dropdown-item" href="#">21cm</a></li>
+                <li><a class="dropdown-item" href="#">40cm</a></li>
+                <li><a class="dropdown-item" href="#">45cm</a></li>
+                <li><a class="dropdown-item" href="#">50cm</a></li>
+                <li><a class="dropdown-item" href="#">60cm</a></li>
+                <li><a class="dropdown-item" href="#">Todos</a></li>
 
-        </ul>
-    </div>
+            </ul>
+        </div>
+    </section>
 
     <!-----FOTOS PRINCIPALES----->
     <main>
-        <h1 class="productosCentrados underline paddingTitulos">PRODUCTOS</h1>
 
-        <section class="container-fluid">
-            <h2 class="productosCentrados underline paddingTitulos">ANILLOS</h2>
-            <div class="row destacadosCentro">
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/anillo cora  .JPG.JPG"
-                            alt="Anillo Corazón">
-                    </figure>
-                    <p class="textoMedio">Anillo Corazón</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/anillo cuadrado .JPG.JPG"
-                            alt="Anillo Cuadrado">
-                    </figure>
-                    <p class="textoMedio">Anillo Cuadrado</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/anillo panther .jpg" alt="Anillo Panther">
-                    </figure>
-                    <p class="textoMedio">Anillo Panther</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/anillo todo pasa baño en oro .JPG.JPG"
-                            alt="Anillo Todo Pasa Bañado en Oro">
-                    </figure>
-                    <p class="textoMedio">Anillo Todo Pasa Bañado en Oro</p>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="container-fluid">
-            <h2 class="productosCentrados underline paddingTitulos">AROS</h2>
-            <section>
+        <div>
+            <section class="sectionProductos container-fluid">
+                <h1 class="productosCentrados resaltado underline paddingTitulos">PRODUCTOS</h1>
+                <h2 class="productosCentrados resaltado underline paddingTitulos">ANILLOS</h2>
                 <div class="row destacadosCentro">
                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
                         <figure class="productoFlex">
-                            <img class="tamanoFotos rounded borde" src="../images/aros corazon calado .JPG"
-                                alt="Aros Corazón Calado">
+                            <img class="tamanoFotos rounded borde" src="../images/anillo cora  .JPG.JPG"
+                                alt="Anillo Corazón">
                         </figure>
-                        <p class="textoMedio">Aros Corazón Calado</p>
+                        <p class=" resaltadotextoMedio">Anillo Corazón</p>
                     </div>
                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
                         <figure class="productoFlex">
-                            <img class="tamanoFotos rounded borde" src="../images/aros estrella calada.JPG"
-                                alt="Aros Estrella Calada">
+                            <img class="tamanoFotos rounded borde" src="../images/anillo cuadrado .JPG.JPG"
+                                alt="Anillo Cuadrado">
                         </figure>
-                        <p class="textoMedio">Aros Estrella Calada</p>
+                        <p class="textoMedio">Anillo Cuadrado</p>
                     </div>
                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
                         <figure class="productoFlex">
-                            <img class="tamanoFotos rounded borde" src="../images/aros trepadores lombriz .jpg"
-                                alt="Aros Trepadores Lombriz">
+                            <img class="tamanoFotos rounded borde" src="../images/anillo panther .jpg"
+                                alt="Anillo Panther">
                         </figure>
-                        <p class="textoMedio">Aros Trepadores Lombriz</p>
+                        <p class="textoMedio">Anillo Panther</p>
                     </div>
                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
                         <figure class="productoFlex">
-                            <img class="tamanoFotos rounded borde" src="../images/aros-circulo.png"
-                                alt="Aros con Bolitas de 3mm">
+                            <img class="tamanoFotos rounded borde" src="../images/anillo todo pasa baño en oro .JPG.JPG"
+                                alt="Anillo Todo Pasa Bañado en Oro">
                         </figure>
-                        <p class="textoMedio">Aros Circulo Calado</p>
+                        <p class="textoMedio">Anillo Todo Pasa Bañado en Oro</p>
+
                     </div>
                 </div>
             </section>
-        </section>
 
-        <section class="container-fluid">
-            <h2 class="productosCentrados underline paddingTitulos">CADENAS</h2>
-            <h3 class="productosCentrados paddingTitulos">De Mujer</h3>
-            <div class="row destacadosCentro">
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/cadena forcet oval .JPG"
-                            alt="Cadena Forcet Oval">
-                    </figure>
-                    <p class="textoMedio">Cadena Forcet Oval</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/cadena groumet cerrada 3 .JPG.JPG"
-                            alt="Cadena Groumet Cerrada">
-                    </figure>
-                    <p class="textoMedio">Cadena Groumet Cerrada</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/cadena panther 1 .JPG"
-                            alt="Cadena Panther">
-                    </figure>
-                    <p class="textoMedio">Cadena Panther</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/cadena punto peruano .JPG.JPG"
-                            alt="Cadena Punto Peruano">
-                    </figure>
-                    <p class="textoMedio">Cadena Punto Peruano</p>
-                </div>
-            </div>
-        </section>
+            <section class="sectionProductos container-fluid">
+                <h2 class="productosCentrados resaltado underline paddingTitulos">AROS</h2>
+                <section>
+                    <div class="row destacadosCentro">
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                            <figure class="productoFlex">
+                                <img class="tamanoFotos rounded borde" src="../images/aros corazon calado .JPG"
+                                    alt="Aros Corazón Calado">
+                            </figure>
+                            <p class="textoMedio">Aros Corazón Calado</p>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                            <figure class="productoFlex">
+                                <img class="tamanoFotos rounded borde" src="../images/aros estrella calada.JPG"
+                                    alt="Aros Estrella Calada">
+                            </figure>
+                            <p class="textoMedio">Aros Estrella Calada</p>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                            <figure class="productoFlex">
+                                <img class="tamanoFotos rounded borde" src="../images/aros trepadores lombriz .jpg"
+                                    alt="Aros Trepadores Lombriz">
+                            </figure>
+                            <p class="textoMedio">Aros Trepadores Lombriz</p>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                            <figure class="productoFlex">
+                                <img class="tamanoFotos rounded borde" src="../images/aros-circulo.png"
+                                    alt="Aros con Bolitas de 3mm">
+                            </figure>
+                            <p class="textoMedio">Aros Circulo Calado</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
 
-        <h3 class="productosCentrados paddingTitulos">De Hombre</h3>
-        <section class="container-fluid">
-            <div class="row">
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/cadena de hombre 1 (1).JPG"
-                            alt="Cadena Figaro Plata y Oro">
-                    </figure>
-                    <p class="textoMedio">Cadena Figaro Plata y Oro</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/cadena de hombre 1 (2).JPG"
-                            alt="Cadena Panther">
-                    </figure>
-                    <p class="textoMedio">Cadena Panther</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/cadena de hombre 1 (3).JPG">
-                    </figure>
-                    <p class="textoMedio">Cadena Groumet Cerrada</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/cadena de hombre 1 (4).JPG"
-                            alt="Cadena Forcet Cuadrada">
-                    </figure>
-                    <p class="textoMedio">Cadena Forcet Cuadrada</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="container-fluid">
-            <h2 class="productosCentrados underline paddingTitulos">DIJES</h2>
-            <div class=" row">
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/dije ancla .JPG" alt="Dije de Ancla">
-                    </figure>
-                    <p class="textoMedio">Dije de Ancla</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/dije estetoscopio .JPG"
-                            alt="Dije Estetoscopio">
-                    </figure>
-                    <p class="textoMedio">Dije Estetoscopio</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/dije estrella de david .JPG"
-                            alt="Dije de Estrella Judia">
-                    </figure>
-                    <p class="textoMedio">Dije Estrella de David</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/DIJE SUN D37.jpg" alt="Dije de Sol">
-                    </figure>
-                    <p class="textoMedio">Dije de Sol</p>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="container-fluid">
-            <h2 class="productosCentrados underline paddingTitulos">PULSERAS</h2>
-            <div class=" row">
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/pulsera 2 circulos karma .JPG"
-                            alt="Pulsera Karma">
-                    </figure>
-                    <p class="textoMedio">Pulsera Karma</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/pulsera bolitas 3mm (1).JPG"
-                            alt="Pulsera Bolitas">
-                    </figure>
-                    <p class="textoMedio">Pulsera Bolitas de 3mm</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/pulsera bolitas y colibri .JPG"
-                            alt="Pulsera Bolitas y Colibrí">
-                    </figure>
-                    <p class="textoMedio">Pulsera Bolitas y Colibrí</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/pulsera esclava 5mm .JPG"
-                            alt="Pulsera Esclava">
-                    </figure>
-                    <p class="textoMedio">Pulsera Esclava de 5mm</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="container-fluid">
-            <div class="destacadosCentro row">
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/pulsera forcet oval..JPG"
-                            alt="Pulsera Forcet Oval">
-                    </figure>
-                    <p class="textoMedio">Pulsera Forcet Oval</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/pulsera groumet cerrada 0 .JPG"
-                            alt="Pulsera Groumet Cerrada">
-                    </figure>
-                    <p class="textoMedio">Pulsera Groumet Cerrada</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/pulsera infinito grande .jpg.jpg"
-                            alt="Pulsera Infinito Grande">
-                    </figure>
-                    <p class="textoMedio">Pulsera Infinito Grande</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/pulsera punto peruano.JPG"
-                            alt="Pulsera Punto Peruano">
-                    </figure>
-                    <p class="textoMedio">Pulsera Punto Peruano</p>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="container-fluid">
-            <h2 class="productosCentrados underline paddingTitulos">CONJUNTOS</h2>
-            <section class="destacadosCentro row">
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos fotoCentrado rounded borde" src="../images/conjunto (1).JPG"
-                            alt="Triángulos">
-                    </figure>
-                    <p class="textoMedio">Conjunto con Dije Triángulo</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos fotoCentrado rounded borde" src="../images/conjunto (2).JPG"
-                            alt="Bolitas">
-                    </figure>
-                    <p class="textoMedio">Conjunto Cadena con Bolitas</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos fotoCentrado rounded borde" src="../images/conjunto (4).JPG"
-                            alt="Pelota de Fútbol">
-                    </figure>
-                    <p class="textoMedio">Conjunto con Pelota de Fútbol</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos fotoCentrado rounded borde" src="../images/conjunto (8).JPG"
-                            alt="Susano">
-                    </figure>
-                    <p class="textoMedio">Conjunto con Dije Susano</p>
+            <section class=" sectionProductos container-fluid">
+                <h2 class="productosCentrados resaltado underline paddingTitulos">CADENAS</h2>
+                <h3 class="productosCentrados resaltado paddingTitulos">De Mujer</h3>
+                <div class="row destacadosCentro">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/cadena forcet oval .JPG"
+                                alt="Cadena Forcet Oval">
+                        </figure>
+                        <p class="textoMedio">Cadena Forcet Oval</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/cadena groumet cerrada 3 .JPG.JPG"
+                                alt="Cadena Groumet Cerrada">
+                        </figure>
+                        <p class="textoMedio">Cadena Groumet Cerrada</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/cadena panther 1 .JPG"
+                                alt="Cadena Panther">
+                        </figure>
+                        <p class="textoMedio">Cadena Panther</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/cadena punto peruano .JPG.JPG"
+                                alt="Cadena Punto Peruano">
+                        </figure>
+                        <p class="textoMedio">Cadena Punto Peruano</p>
+                    </div>
                 </div>
             </section>
-        </section>
 
-        <section class=" container-fluid">
-            <h2 class="productosCentrados underline paddingTitulos">PACKS MAYORISTAS</h2>
-            <section class="destacadosCentro row">
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/pack domingo .JPG.JPG"
-                            alt="Pack Argollas Gruesas">
-                    </figure>
-                    <p class="textoMedio">Pack Argollas</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/pack marino  .JPG.JPG" alt="Pack Marino">
-                    </figure>
-                    <p class="textoMedio">Pack Marino</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/Pack aros Colibri  .JPG"
-                            alt="Pack Colibrí">
-                    </figure>
-                    <p class="textoMedio">Pack Colibrí</p>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
-                    <figure class="productoFlex">
-                        <img class="tamanoFotos rounded borde" src="../images/PACK MAYORISTA ARGOLLITAS 1,5MM .JPG">
-                    </figure>
-                    <p class="textoMedio">Pack de 1,5mm</p>
+            <section class="sectionProductos container-fluid">
+                <h3 class="productosCentrados resaltado paddingTitulos">De Hombre</h3>
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/cadena de hombre 1 (1).JPG"
+                                alt="Cadena Figaro Plata y Oro">
+                        </figure>
+                        <p class="textoMedio">Cadena Figaro Plata y Oro</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/cadena de hombre 1 (2).JPG"
+                                alt="Cadena Panther">
+                        </figure>
+                        <p class="textoMedio">Cadena Panther</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/cadena de hombre 1 (3).JPG">
+                        </figure>
+                        <p class="textoMedio">Cadena Groumet Cerrada</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/cadena de hombre 1 (4).JPG"
+                                alt="Cadena Forcet Cuadrada">
+                        </figure>
+                        <p class="textoMedio">Cadena Forcet Cuadrada</p>
+                    </div>
                 </div>
             </section>
-        </section>
 
-
-        <section class="container-fluid">
-            <h2 class="productosCentrados underline paddingTitulos">GIFT CARDS</h2>
-            <section class="destacadosCentro row">
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <figure class="productoFlex">
-                        <img class="tamanoGiftCard rounded borde" src="../images/gift card 3k.png"
-                            alt="Gift Card $3000">
-                    </figure>
-                    <p class="textoMedio">Gift Card: $3000</p>
-                </div>
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <figure class="productoFlex">
-                        <img class="tamanoGiftCard rounded borde" src="../images/gift card 6k.png"
-                            alt="Gift Card $6000">
-                    </figure>
-                    <p class="textoMedio">Gift Card: $6000</p>
-                </div>
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <figure class="productoFlex">
-                        <img class="tamanoGiftCard rounded borde" src="../images/gift card 9k.png"
-                            alt="Gift Card $9000">
-                    </figure>
-                    <p class="textoMedio">Gift Card: $9000</p>
+            <section class="sectionProductos container-fluid">
+                <h2 class="productosCentrados resaltado underline paddingTitulos">DIJES</h2>
+                <div class=" row">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/dije ancla .JPG" alt="Dije de Ancla">
+                        </figure>
+                        <p class="textoMedio">Dije de Ancla</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/dije estetoscopio .JPG"
+                                alt="Dije Estetoscopio">
+                        </figure>
+                        <p class="textoMedio">Dije Estetoscopio</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/dije estrella de david .JPG"
+                                alt="Dije de Estrella Judia">
+                        </figure>
+                        <p class="textoMedio">Dije Estrella de David</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/DIJE SUN D37.jpg" alt="Dije de Sol">
+                        </figure>
+                        <p class="textoMedio">Dije de Sol</p>
+                    </div>
                 </div>
             </section>
-        </section>
 
 
+            <section class="sectionProductos container-fluid">
+                <h2 class="productosCentrados resaltado underline paddingTitulos">PULSERAS</h2>
+                <div class=" row">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/pulsera 2 circulos karma .JPG"
+                                alt="Pulsera Karma">
+                        </figure>
+                        <p class="textoMedio">Pulsera Karma</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/pulsera bolitas 3mm (1).JPG"
+                                alt="Pulsera Bolitas">
+                        </figure>
+                        <p class="textoMedio">Pulsera Bolitas de 3mm</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/pulsera bolitas y colibri .JPG"
+                                alt="Pulsera Bolitas y Colibrí">
+                        </figure>
+                        <p class="textoMedio">Pulsera Bolitas y Colibrí</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/pulsera esclava 5mm .JPG"
+                                alt="Pulsera Esclava">
+                        </figure>
+                        <p class="textoMedio">Pulsera Esclava de 5mm</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sectionProductos container-fluid">
+                <div class="destacadosCentro row">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/pulsera forcet oval..JPG"
+                                alt="Pulsera Forcet Oval">
+                        </figure>
+                        <p class="textoMedio">Pulsera Forcet Oval</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/pulsera groumet cerrada 0 .JPG"
+                                alt="Pulsera Groumet Cerrada">
+                        </figure>
+                        <p class="textoMedio">Pulsera Groumet Cerrada</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/pulsera infinito grande .jpg.jpg"
+                                alt="Pulsera Infinito Grande">
+                        </figure>
+                        <p class="textoMedio">Pulsera Infinito Grande</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/pulsera punto peruano.JPG"
+                                alt="Pulsera Punto Peruano">
+                        </figure>
+                        <p class="textoMedio">Pulsera Punto Peruano</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class=" sectionProductos container-fluid">
+                <h2 class="productosCentrados resaltado underline paddingTitulos">CONJUNTOS</h2>
+                <section class="destacadosCentro row">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos fotoCentrado rounded borde" src="../images/conjunto (1).JPG"
+                                alt="Triángulos">
+                        </figure>
+                        <p class="textoMedio">Conjunto con Dije Triángulo</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos fotoCentrado rounded borde" src="../images/conjunto (2).JPG"
+                                alt="Bolitas">
+                        </figure>
+                        <p class="textoMedio">Conjunto Cadena con Bolitas</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos fotoCentrado rounded borde" src="../images/conjunto (4).JPG"
+                                alt="Pelota de Fútbol">
+                        </figure>
+                        <p class="textoMedio">Conjunto con Pelota de Fútbol</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos fotoCentrado rounded borde" src="../images/conjunto (8).JPG"
+                                alt="Susano">
+                        </figure>
+                        <p class="textoMedio">Conjunto con Dije Susano</p>
+                    </div>
+                </section>
+            </section>
+
+            <section class="sectionProductos container-fluid">
+                <h2 class="productosCentrados resaltado underline paddingTitulos">PACKS MAYORISTAS</h2>
+                <section class="destacadosCentro row">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/pack domingo .JPG.JPG"
+                                alt="Pack Argollas Gruesas">
+                        </figure>
+                        <p class="textoMedio">Pack Argollas</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/pack marino  .JPG.JPG"
+                                alt="Pack Marino">
+                        </figure>
+                        <p class="textoMedio">Pack Marino</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/Pack aros Colibri  .JPG"
+                                alt="Pack Colibrí">
+                        </figure>
+                        <p class="textoMedio">Pack Colibrí</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxxl-3">
+                        <figure class="productoFlex">
+                            <img class="tamanoFotos rounded borde" src="../images/PACK MAYORISTA ARGOLLITAS 1,5MM .JPG">
+                        </figure>
+                        <p class="textoMedio">Pack de 1,5mm</p>
+                    </div>
+                </section>
+            </section>
+
+
+            <section class="sectionProductos container-fluid">
+                <h2 class="productosCentrados resaltado underline paddingTitulos">GIFT CARDS</h2>
+                <section class="destacadosCentro row">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <figure class="productoFlex">
+                            <img class="tamanoGiftCard rounded borde" src="../images/gift card 3k.png"
+                                alt="Gift Card $3000">
+                        </figure>
+                        <p class="textoMedio">Gift Card: $3000</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <figure class="productoFlex">
+                            <img class="tamanoGiftCard rounded borde" src="../images/gift card 6k.png"
+                                alt="Gift Card $6000">
+                        </figure>
+                        <p class="textoMedio">Gift Card: $6000</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <figure class="productoFlex">
+                            <img class="tamanoGiftCard rounded borde" src="../images/gift card 9k.png"
+                                alt="Gift Card $9000">
+                        </figure>
+                        <p class="textoMedio">Gift Card: $9000</p>
+                    </div>
+                </section>
+            </section>
+        </div>
 
         <!---- BUTTON ---->
-        <section class="buttonCentrado">
-            <a class="arriba" href="#ARRIBA"> Volver a arriba <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                    height="16" fill="currentColor" class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z" />
-                </svg>
-            </a>
+        <section class="botonScss">
+            <div class="buttonCentrado">
+                <a class="arriba" href="#ARRIBAS"> Volver a arriba <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z" />
+                    </svg>
+                </a>
+            </div>
         </section>
+
     </main>
 
     <!--FOOTER/PIE DE PÁGINA-->

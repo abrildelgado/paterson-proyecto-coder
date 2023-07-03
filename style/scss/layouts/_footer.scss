@@ -1,0 +1,32 @@
+//FOOTER -------------------------------------------------------------------------------
+
+footer {
+    background-color: $colorSecundario;
+    width: 100%;
+    font-size: small;
+    color: rgb(0, 0, 0);
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    p {
+        &Copyright {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    figure {
+        .tamanoWhatsapp {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            right: 1%;
+            bottom: 7%;
+        }
+
+    }
+
+}

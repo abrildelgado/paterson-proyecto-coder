@@ -1,0 +1,40 @@
+// RESET (Selector Universal)
+
+* {
+    font-family: 'Roboto', sans-serif; 
+
+    h1 {
+        color: $colorPrincipal;
+    }
+
+    a {
+        color: $colorPrincipal;
+        text-decoration: none;
+    }
+
+    h2 {
+        color: $colorPrincipal;
+
+    }
+
+    h3 {
+        color: $colorPrincipal;
+
+    }
+
+    .underline {
+        text-decoration: underline;
+    }
+    
+    .resaltado {
+        font-weight: bold;
+    }
+    
+    .formularioTamano {
+        width: 50%;
+    }
+    
+    .textoMedio {
+        text-align: center;
+    }
+}

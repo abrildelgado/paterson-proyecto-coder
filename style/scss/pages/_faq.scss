@@ -1,0 +1,100 @@
+//FAQ ----------------------------------------------------------------------------------
+
+
+.sectionFAQDOS {
+
+    ol {
+        li {
+            font-weight: bold;
+        }
+    }
+
+    .largosFoto {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+    }
+
+    article {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+        .paddingLargos {
+            margin: 1%;
+        }
+
+        .bordeLargos {
+            border: 3px solid $colorPrincipal;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+
+.sectionFAQCUATRO {
+
+    .centrado {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fotoPagos {
+        width: auto
+    }
+
+    article {
+        .centrado {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fotoCorreos {
+            width: auto;
+        }
+    }
+}
+
+
+.sectionFAQCCINCO {
+
+    .centrado {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .garantiaClase {
+        .tamanoGarantia {
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+}
+
+.sectionFAQSEIS {
+
+    .iframeFaq {
+        text-align: center;
+    }
+
+    .containers-fluid {
+        text-align: center;
+    }
+
+    .tamanoIframefaq {
+        width: 500px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2%;
+    }
+}

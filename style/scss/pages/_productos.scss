@@ -1,0 +1,43 @@
+//Fotos + títulos
+.sectionProductos {
+
+    .productosCentrados {
+        display: flex;
+        justify-content: center;
+    }
+
+    .borde {
+        border: 3px solid $colorPrincipal;
+        border-radius: 10px;
+    }
+
+
+    .paddingTitulos {
+        padding-bottom: 2%;
+    }
+
+
+    .tamanoFotos {
+        width: 80%;
+        height: 90%;
+    }
+
+    @media (max-width: 992px) {
+        .tamanoGiftCard {
+            width: 50%;
+            height: 50%;
+        }
+    }
+
+    .tamanoGiftCard {
+        width: 80%;
+        height: 80%;
+    }
+
+
+    .productoFlex {
+        display: flex;
+        justify-content: center;
+    }
+
+}

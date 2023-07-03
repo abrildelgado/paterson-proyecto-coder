@@ -7,7 +7,11 @@
     <title>Contacto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../style/css/style.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../images/paterson-o-removebg-preview.png">
 
 </head>
@@ -48,21 +52,20 @@
                 </div>
             </div>
         </nav>
-    
+
         <figure class="headerContenedor">
             <img class="logoPaterson" src="../images/logo-paterson.jpg" alt="Logo de Paterson">
         </figure>
     </header>
 
 
-    <main>
-
+    <main class="mainContacto">
         <!-- FORMULARIOS -->
         <section class="container text-left">
             <div class="row align-items-start">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxxl-6">
                     <form class="container-fluid">
-                        <h1>Contacta al equipo:</h1>
+                        <h1 class="resaltado">Contacta al equipo:</h1>
                         <p><span class="underline resaltado">Nombre</span>: Abril Delgado</p>
                         <p><span class="underline resaltado">Tel.</span>: +54 156 972 2458</p>
                         <p class="resaltado">O también comunicarse con:</p>
@@ -73,7 +76,7 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxxl-6">
                     <section class="container-fluid">
-                        <h1>Dejanos un mensaje:</h1>
+                        <h1 class="resaltado">Dejanos un mensaje:</h1>
                         <div>
                             <label for="exampleFormControlInput1"
                                 class="form-label formularioTamano resaltado margenContacto">Nombre:</label>
@@ -95,8 +98,9 @@
                                 rows="3"></textarea>
                         </div>
 
-                        <button type="submit"
-                            class="btn btn-outline-success buttonSend resaltado margenContacto">Enviar</button>
+                        <button type="submit" class="btn btn-outline-success buttonSend resaltado margenContacto">Enviar
+                        </button>
+                    </section>
                 </div>
             </div>
         </section>

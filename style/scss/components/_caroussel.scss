@@ -1,0 +1,65 @@
+//Carrusel del Index
+
+.sectionCarrusel {
+
+    display: flex;
+    justify-content: center;
+
+    .tamanoCarousel {
+
+        @media (min-width: 1400px) {
+            &Carousel {
+                max-width: 80%;
+            }
+        }
+
+        @media (min-width: 1800px) {
+            &Carousel {
+                max-width: 60%;
+            }
+        }
+
+    }
+
+    .carouselSize {
+        width: 95%;
+    }
+
+    .carouselContainer {
+        border: 3px solid $colorPrincipal;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        background-color: $colorSecundario;
+        width: 5%;
+    }
+
+}
+
+//Carrousel de Sobre Nosotros
+.sectionNosotros {
+
+    .divCarrusel {
+
+        .carrousel {
+            display: flex;
+            justify-content: center;
+            width: 550px;
+            height: 700px;
+            padding-bottom: 4%;
+        }
+
+        .flechaButton {
+
+            border: 3px solid $colorPrincipal;
+            border-radius: 10px;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            background-color: $colorSecundario;
+            width: 5%;
+        }
+    }
+}
