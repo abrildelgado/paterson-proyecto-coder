@@ -198,6 +198,19 @@ footer figure .tamanoWhatsapp {
   flex-direction: none;
   align-items: none;
 }
+@media (max-width: 470px) {
+  .sectionCards .tamanoCard {
+    min-width: 70%;
+  }
+}
+@media (max-width: 470px) {
+  .sectionCards .cardsJustify {
+    display: flex;
+    justify-content: center;
+    flex-direction: none;
+    align-items: none;
+  }
+}
 .sectionCards .cardColor {
   background-color: rgb(105, 132, 105);
 }
@@ -217,19 +230,6 @@ footer figure .tamanoWhatsapp {
 @media (max-width: 100vh) {
   .sectionCards .tamanoCard {
     max-height: 100%;
-  }
-}
-@media (max-width: 470px) {
-  .sectionCards .tamanoCard {
-    min-width: 70%;
-  }
-}
-@media (max-width: 470px) {
-  .sectionCards .cardsJustify {
-    display: flex;
-    justify-content: center;
-    flex-direction: none;
-    align-items: none;
   }
 }
 

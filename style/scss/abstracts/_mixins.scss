@@ -1,11 +1,19 @@
 //Mixins -----------------------------
 
+//Mixin Display Flex
 @mixin flex ($justify, $direccion, $align) {
     display: flex;
     justify-content: $justify;
     flex-direction: $direccion;
     align-items: $align;
 
+}
+
+// Mixin Vista Mobile
+@mixin mobile {
+    @media (max-width: 470px) {
+        @content;
+    }
 }
 
 // Extends ---------------------------
@@ -16,9 +24,9 @@
     background-color: rgb(151, 189, 151);
     color: black;
     border: 1px solid rgb(0, 0, 0);
-  }
-  
-  //Extend de Carrusel (Flechas)
+}
+
+//Extend de Carrusel (Flechas)
 
 %carruselFlechas {
 
@@ -33,6 +41,4 @@
 
 %bordesCosas {
     border: 3px solid $colorPrincipal;
-    }
-
-
+}
