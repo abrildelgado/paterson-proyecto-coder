@@ -1,0 +1,38 @@
+//Mixins -----------------------------
+
+@mixin flex ($justify, $direccion, $align) {
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $direccion;
+    align-items: $align;
+
+}
+
+// Extends ---------------------------
+
+//Boton Extend
+
+%botonExtend {
+    background-color: rgb(151, 189, 151);
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+  }
+  
+  //Extend de Carrusel (Flechas)
+
+%carruselFlechas {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        background-color: $colorSecundario;
+        width: 5%;
+    }
+}
+
+//Bordes de Carrusel y Fotos
+
+%bordesCosas {
+    border: 3px solid $colorPrincipal;
+    }
+
+

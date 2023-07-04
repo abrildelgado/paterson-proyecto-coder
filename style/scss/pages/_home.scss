@@ -5,11 +5,8 @@
 .sectionDestacados {
 
     .destacadosCentro {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        @include flex ($direccion: row, $align: none, $justify: space-around);
     }
-
 
     .paddingDestacado {
         padding-bottom: 2%;
@@ -17,7 +14,7 @@
 
     figure {
         .borde {
-            border: 3px solid $colorPrincipal;
+            @extend %bordesCosas;
             border-radius: 10px;
         }
 
@@ -46,10 +43,8 @@
 
         .showroomTexto {
             text-align: center;
-            display: flex;
-            align-items: center;
             font-size: large;
-
+            @include flex ($direccion: none, $align: center, $justify: none);
         }
 
         .paddingTexto {
@@ -63,19 +58,34 @@
 
 .sectionCards {
 
+    .cardBetween {
+        @include flex ($direccion: none, $align: none, $justify: center);
+    }
+
+    .cardFlex {
+        @include flex ($direccion: none, $align: none, $justify: center);
+
+    }
+
+    .cardColor {
+        background-color: $colorPrincipal;
+    }
+
+    .cardColorDos {
+        background-color: $colorSecundario;
+    }
+
     .cardPadding {
         margin-bottom: 2%;
     }
 
-    @media (max-width: 470px) {
-        .cardsJustify {
-            display: flex;
-            justify-content: center;
-        }
-    }
-
     .cardPadding {
         margin-bottom: 2%;
+    }
+
+    .cardSize {
+        width: 30%;
+        height: 40%;
     }
 
     @media (max-width: 100vh) {
@@ -90,32 +100,10 @@
         }
     }
 
-    .cardBetween {
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .cardPadding {
-        margin-bottom: 2%;
-    }
-
-    .cardColor {
-        background-color: $colorPrincipal;
-    }
-
-    .cardFlex {
-        display: flex;
-        justify-content: center;
-    }
-
-    .cardSize {
-        width: 30%;
-        height: 40%;
-    }
-
-    .cardColorDos {
-        background-color: rgb(170, 215, 170);
+    @media (max-width: 470px) {
+        .cardsJustify {
+            @include flex ($direccion: none, $align: none, $justify: center);
+        }
     }
 
 }

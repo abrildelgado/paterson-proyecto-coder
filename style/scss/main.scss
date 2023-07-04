@@ -1,15 +1,20 @@
+//Abstracts: Variables, Mixins, Extend
 @import './abstracts/variables';
+@import './abstracts/mixins';
 
+//Base: Reset
 @import './base/reset';
-@import './base/typography';
 
+//Layout: Navbar/Header, Footer
 @import './layouts/navbar';
 @import './layouts/footer';
 
+//Componentes: Botones, Carrusel, Dropdown
 @import './components/buttons';
 @import './components/caroussel';
 @import './components/dropdown';
 
+//Páginas: Index, Contacto, Sobre Nosotros, Productos, FAQ
 @import './pages/home';
 @import './pages/contact';
 @import './pages/about-us';

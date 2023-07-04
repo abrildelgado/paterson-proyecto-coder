@@ -12,16 +12,11 @@
     .largosFoto {
         width: 50%;
         height: 50%;
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-
+        @include flex ($direccion: row, $align: none, $justify: center);
     }
 
     article {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
+        @include flex ($direccion: row, $align: none, $justify: center);
 
         .paddingLargos {
             margin: 1%;
@@ -39,9 +34,7 @@
 .sectionFAQCUATRO {
 
     .centrado {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex ($direccion: none, $align: center, $justify: center);
     }
 
     .fotoPagos {
@@ -50,9 +43,7 @@
 
     article {
         .centrado {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex ($direccion: none, $align: center, $justify: center);
         }
 
         .fotoCorreos {
@@ -65,16 +56,14 @@
 .sectionFAQCCINCO {
 
     .centrado {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex ($direccion: none, $align: center, $justify: center);
+
     }
 
     .garantiaClase {
         .tamanoGarantia {
             max-width: 100%;
-            display: flex;
-            justify-content: center;
+            @include flex ($direccion: none, $align: none, $justify: center);
         }
     }
 

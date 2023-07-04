@@ -2,24 +2,30 @@
 .sectionProductos {
 
     .productosCentrados {
-        display: flex;
-        justify-content: center;
+        @include flex ($direccion: none, $align: none, $justify: center);
+    }
+
+    .productoFlex {
+        @include flex ($direccion: none, $align: none, $justify: center);
     }
 
     .borde {
-        border: 3px solid $colorPrincipal;
+        @extend %bordesCosas;
         border-radius: 10px;
     }
-
 
     .paddingTitulos {
         padding-bottom: 2%;
     }
 
-
     .tamanoFotos {
         width: 80%;
         height: 90%;
+    }
+    
+    .tamanoGiftCard {
+        width: 80%;
+        height: 80%;
     }
 
     @media (max-width: 992px) {
@@ -27,17 +33,6 @@
             width: 50%;
             height: 50%;
         }
-    }
-
-    .tamanoGiftCard {
-        width: 80%;
-        height: 80%;
-    }
-
-
-    .productoFlex {
-        display: flex;
-        justify-content: center;
     }
 
 }

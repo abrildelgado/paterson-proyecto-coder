@@ -12,12 +12,11 @@ header {
 
     .navbar-nav {
         display: flex;
-        justify-content: flex-end;
+        @include flex ($direccion: none, $align: none, $justify: flex-end);
     }
 
     .headerContenedor {
-        display: flex;
-        justify-content: center;
+        @include flex ($direccion: none, $align: none, $justify: center);
     }
 
     figure {
