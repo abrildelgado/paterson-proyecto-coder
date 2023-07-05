@@ -1,3 +1,4 @@
+
   //Boton Volver Arriba (Productos)
   .botonScss {
     .buttonCentrado {
@@ -6,15 +7,18 @@
       align-items: center;
       margin-bottom: 3%;
     }
-  
+
     .arriba {
       display: inline-block;
       border-radius: 10px;
       padding: 5px;
       @extend %botonExtend;
+      @extend %animacionesBotones;
+
     }
   }
-  
+
+
   //Boton Enviar (Contacto)
 
   .mainContacto {
@@ -23,5 +27,6 @@
       padding-top: 1%;
       margin-bottom: 1%;
       @extend %botonExtend;
+      @extend %animacionesBotones;
     }
   }

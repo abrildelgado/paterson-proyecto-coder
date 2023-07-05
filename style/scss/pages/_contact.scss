@@ -1,6 +1,11 @@
 //CONTACTO-------------------------------------------------------------------------------
 
 .mainContacto {
+
+    h1 {
+        @extend %animacionesExtend;
+    }
+    
     .margenContacto {
         margin-bottom: 1%;
     }

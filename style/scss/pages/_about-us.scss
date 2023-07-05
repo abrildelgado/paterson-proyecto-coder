@@ -2,7 +2,9 @@
 
 .sectionNosotros {
 
-    //Texto
+    h1 {
+        @extend %animacionesExtend;
+    }
     
     .containerCalesita {
         margin-bottom: 4%;

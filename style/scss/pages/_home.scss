@@ -4,6 +4,10 @@
 
 .sectionDestacados {
 
+    h1 {
+       @extend %animacionesExtend;
+    }
+
     .destacadosCentro {
         @include flex ($direccion: row, $align: none, $justify: space-around);
     }
@@ -26,9 +30,16 @@
 
 }
 
+
+
 //Iframe 
 
 .paddingIframes {
+
+    h1 {
+        @extend %animacionesExtend;
+    }
+
 
     .paddingIframe {
         padding-top: 5%;
@@ -51,6 +62,7 @@
             margin-top: 5%;
             margin-bottom: 1%;
         }
+
     }
 }
 

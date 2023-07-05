@@ -15,6 +15,42 @@
   border: 3px solid rgb(105, 132, 105);
 }
 
+.sectionProductos h1, h1, .sectionNosotros h1, .mainContacto h1, .paddingIframes h1, .sectionDestacados h1 {
+  animation-name: animacion-titulo;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+}
+
+.mainContacto .buttonSend, .botonScss .arriba {
+  animation-name: animacion-botones;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+}
+
+@keyframes animacion-titulo {
+  0% {
+    color: rgb(105, 132, 105);
+  }
+  50% {
+    color: rgb(185, 231, 185);
+  }
+  100% {
+    color: rgb(105, 132, 105);
+  }
+}
+@keyframes animacion-botones {
+  0% {
+    background-color: rgb(105, 132, 105);
+  }
+  50% {
+    background-color: rgb(185, 231, 185);
+  }
+  100% {
+    background-color: rgb(105, 132, 105);
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
 }

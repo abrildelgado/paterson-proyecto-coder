@@ -42,3 +42,49 @@
 %bordesCosas {
     border: 3px solid $colorPrincipal;
 }
+
+//Animaciones
+
+%animacionesExtend {
+    animation-name: animacion-titulo;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+}
+
+%animacionesBotones {
+    animation-name: animacion-botones;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+}
+
+//Keyframes Animaciones
+
+@keyframes animacion-titulo {
+    0% {
+        color: $colorPrincipal;
+    }
+
+    50% {
+        color: $colorSecundario;
+    }
+
+    100% {
+        color: $colorPrincipal;
+    }
+}
+
+@keyframes animacion-botones {
+    0% {
+        background-color: $colorPrincipal;
+    }
+
+    50% {
+        background-color: $colorSecundario;
+    }
+
+    100% {
+        background-color: $colorPrincipal;
+    }
+}

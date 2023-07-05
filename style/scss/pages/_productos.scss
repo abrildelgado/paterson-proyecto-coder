@@ -1,6 +1,10 @@
 //Fotos + títulos
 .sectionProductos {
 
+    h1{
+        @extend %animacionesExtend;
+    }
+
     .productosCentrados {
         @include flex ($direccion: none, $align: none, $justify: center);
     }
