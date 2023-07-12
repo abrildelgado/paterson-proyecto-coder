@@ -101,7 +101,6 @@ header .headerContenedor {
 }
 header figure .logoPaterson {
   width: 300px;
-  height: 200px;
 }
 
 footer {
@@ -115,7 +114,7 @@ footer {
   flex-direction: none;
   align-items: end;
 }
-footer pCopyright {
+.footerCopyright {
   display: flex;
   justify-content: center;
   flex-direction: none;
