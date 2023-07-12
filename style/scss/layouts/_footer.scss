@@ -5,11 +5,11 @@ footer {
     width: 100%;
     font-size: small;
     color: black;
-    margin-top: 2%;
-    @include flex ($direccion: none, $align: end, $justify: center);
+    padding-top: 6px;
+    @include flex ($direccion: none, $align: center, $justify: center);
 
     p {
-        &Copyright {
+        .footerCopyright {
             @include flex ($direccion: none, $align: center, $justify: center);
         }
     }
@@ -23,6 +23,29 @@ footer {
             bottom: 7%;
         }
 
+    }
+
+    figure {
+        .instagramFooter {
+
+            display: flex;
+            justify-content: start;
+            align-self: start;
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+        }
+    }
+
+    figure {
+        .facebookFooter {
+            display: flex;
+            justify-content: start;
+            align-self: start;
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+        }
     }
 
 }

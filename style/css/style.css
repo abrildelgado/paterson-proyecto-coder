@@ -88,7 +88,6 @@ header .searchBar {
 }
 header .navbar-nav {
   display: flex;
-  display: flex;
   justify-content: flex-end;
   flex-direction: none;
   align-items: none;
@@ -97,10 +96,12 @@ header .headerContenedor {
   display: flex;
   justify-content: center;
   flex-direction: none;
-  align-items: none;
+  align-items: start;
 }
-header figure .logoPaterson {
-  width: 300px;
+header .logoPaterson img {
+  width: auto;
+  height: 150px;
+  margin-left: 2%;
 }
 
 footer {
@@ -108,13 +109,13 @@ footer {
   width: 100%;
   font-size: small;
   color: black;
-  margin-top: 2%;
+  padding-top: 6px;
   display: flex;
   justify-content: center;
   flex-direction: none;
-  align-items: end;
+  align-items: center;
 }
-.footerCopyright {
+footer p .footerCopyright {
   display: flex;
   justify-content: center;
   flex-direction: none;
@@ -124,8 +125,24 @@ footer figure .tamanoWhatsapp {
   width: 50px;
   height: 50px;
   position: fixed;
-  right: 1%;
+  right: 0%;
   bottom: 7%;
+}
+footer figure .instagramFooter {
+  display: flex;
+  justify-content: start;
+  align-self: start;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+footer figure .facebookFooter {
+  display: flex;
+  justify-content: start;
+  align-self: start;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
 }
 
 .botonScss .buttonCentrado {
@@ -143,7 +160,6 @@ footer figure .tamanoWhatsapp {
 .mainContacto .buttonSend {
   margin: 1%;
   padding-top: 1%;
-  margin-bottom: 1%;
 }
 
 .sectionCarrusel {
@@ -185,6 +201,16 @@ footer figure .tamanoWhatsapp {
   color: black;
 }
 
+.botonProductos .dropdown {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 2%;
+}
+.botonProductos .colorBotton {
+  background-color: rgb(151, 189, 151);
+  color: black;
+}
+
 .sectionDestacados .destacadosCentro {
   display: flex;
   justify-content: space-around;
@@ -204,9 +230,6 @@ footer figure .tamanoWhatsapp {
 .paddingIframes .paddingIframe {
   padding-top: 5%;
   padding-bottom: 5%;
-}
-.paddingIframes .sectionIframes .tamanoIframe {
-  height: 20px;
 }
 .paddingIframes .sectionIframes .showroomTexto {
   text-align: center;
@@ -233,12 +256,12 @@ footer figure .tamanoWhatsapp {
   flex-direction: none;
   align-items: none;
 }
-@media (max-width: 470px) {
+@media (max-width: 492px) {
   .sectionCards .tamanoCard {
     min-width: 70%;
   }
 }
-@media (max-width: 470px) {
+@media (max-width: 492px) {
   .sectionCards .cardsJustify {
     display: flex;
     justify-content: center;
@@ -343,13 +366,6 @@ footer figure .tamanoWhatsapp {
 }
 .sectionFAQSEIS .containers-fluid {
   text-align: center;
-}
-.sectionFAQSEIS .tamanoIframefaq {
-  width: 500px;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2%;
 }
 
 .sectionProductos .productosCentrados {

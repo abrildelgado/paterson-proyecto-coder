@@ -11,7 +11,7 @@
 
 // Mixin Vista Mobile
 @mixin mobile {
-    @media (max-width: 470px) {
+    @media (max-width: 492px) {
         @content;
     }
 }
